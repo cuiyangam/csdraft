@@ -25,3 +25,9 @@
     typeof  typeof null === 'object'
     in 对象或其原​​型链是否具有带名称的属性 "swim" in animal
     instanceof 有一个运算符来检查一个值是否是另一个值的“实例”
+    类型谓词 pet is Fish
+    never 类型
+
+函数类型定义方法
+    type GreetFunction = (a: string) => void;
+    type DescribableFunction = { description: string; (someArg: number): boolean; };
