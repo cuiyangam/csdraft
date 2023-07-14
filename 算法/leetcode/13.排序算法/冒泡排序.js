@@ -12,6 +12,6 @@ function bubbleSort(a) {
                 flag = true;  // 表示有数据交换      
             }
         }
-        if (!flag) break;  // 没有数据交换，提前退出
+        if (!flag) break;  // 没有数据交换，说明排序已经完成，可以退出
     }
 }
