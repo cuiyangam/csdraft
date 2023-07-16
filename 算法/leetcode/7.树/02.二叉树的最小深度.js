@@ -4,7 +4,7 @@
  */
 
 /**
- * 注意是根节点到叶节点的路径上的节点数量
+ * 注意是根节点到任何一个叶节点的最短路径上的节点数量
  * 递归迭代的过程会遇到如下情况
  *   叶节点：左右子树都为null
  *   非叶非根节点：
@@ -24,17 +24,19 @@
  * @param {TreeNode} root
  * @return {number}
  */
- var minDepth = root => {
+var minDepth = root => {
     if (root === null) {
         return 0;
     }
-    let leftHeight = minDepth(root.left);
-    let rightHeight = minDepth(root.right);
-    if (leftHeight === 0 && rightHeight === 0) {
+    if (root.left === null && root.right === null) {
         return 1;
     }
-    if (leftHeight === 0 && rightHeight !== 0 || leftHeight !== 0 && rightHeight === 0) {
-        return Math.max(leftHeight, rightHeight) + 1;
+    let min = Infinity;
+    if (root.left !== null) {
+        min = Math.min(min, minDepth(root.left));
     }
-    return Math.min(leftHeight, rightHeight) + 1;
+    if (root.right !== null) {
+        min = Math.min(min, minDepth(root.right));
+    }
+    return min + 1;
 }
