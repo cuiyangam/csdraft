@@ -6,3 +6,29 @@
  * 平衡树：每一个结点的左子树和右子树高度差最多为 1
  * 自平衡二叉查找树：左右子树高度差最多为1 的二叉查找树，有AVL树、红黑树等结构
  */
+
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {boolean}
+ */
+var isBalanced = function(root) {
+    if(root == null) {
+        return true;
+    }
+    return Math.abs(height(root.left) - height(root.right)) <= 1 && isBalanced(root.left) && isBalanced(root.right);
+};
+
+var height = function(root) {
+    if(root == null) {
+        return 0;
+    }
+    return Math.max(height(root.left), height(root.right)) + 1;
+};
