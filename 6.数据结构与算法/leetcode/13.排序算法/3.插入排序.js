@@ -2,7 +2,6 @@
  * 插入排序 n^2 稳定排序
  */
 function insertSort(array) {
-    if (!check(array)) return;
     let i, j, temp;
     for (i = 1; i < array.length; i++) {  // 第一个元素默认有序，从第二至最后一个元素依次插入前面有序部分
         temp = array[i];  // 保留待插入的元素
