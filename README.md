@@ -1,3 +1,46 @@
+前端知识图谱
+HTML(1d)
+CSS(1d)
+JavaScript(3d)
+
+打包工具(2d)
+框架(15d)
+
+计算机网络(1d)
+操作系统(1d)
+数据库(3d)
+Node(5d)
+Nginx(1d)
+
+数据结构(3d)
+算法(3d)
+设计模式(3d)
+
+系统设计(5d)
+项目实操(5d)
+    前端
+        js
+            react redux  https://github.com/khaledosman/react-redux-realworld-example-app
+        ts
+            react redux  https://github.com/angelguzmaning/ts-redux-react-realworld-example-app
+    后端
+        js
+            Express + MongoDB + Mongoose  https://github.com/winterrrrrff/realWorld-server
+            exress mysql sequelize  https://github.com/chojs23/realword-exress-sequelize
+        ts
+            NestJS + TypeORM  https://github.com/lujakob/nestjs-realworld-example-app
+            NestJS + Prisma + docker  https://github.com/mr-scrpt/medium-nest-prisma
+            NestJS + microservices + Nx + GraphQL + Docker + redis https://github.com/sefininio/microservices-realworld-app
+
+keywords: 前端面试
+    https://lucifer.ren/fe-interview/#/
+    https://fe.ecool.fun/
+
+5 + 17 + 10 + 9 + 10 = 51d
+
+============================================================================
+
+后端自学路线
 语言本身(7d)
   基本数据类型、操作符、控制流
   类
